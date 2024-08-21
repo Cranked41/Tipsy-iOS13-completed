@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9B2D3F2C765EF8009B52D7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B2D3E2C765EF8009B52D7 /* ResultViewController.swift */; };
+		2B9B2D412C766295009B52D7 /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B2D402C766295009B52D7 /* TipModel.swift */; };
+		2B9B2D432C767563009B52D7 /* TipCalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B2D422C767563009B52D7 /* TipCalculatorBrain.swift */; };
 		ADB689532326708D006D4E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689522326708D006D4E2B /* AppDelegate.swift */; };
 		ADB689552326708D006D4E2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689542326708D006D4E2B /* SceneDelegate.swift */; };
 		ADB689572326708D006D4E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689562326708D006D4E2B /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B9B2D3E2C765EF8009B52D7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		2B9B2D402C766295009B52D7 /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
+		2B9B2D422C767563009B52D7 /* TipCalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorBrain.swift; sourceTree = "<group>"; };
 		ADB6894F2326708D006D4E2B /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB689522326708D006D4E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADB689542326708D006D4E2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B9B2D3B2C765E73009B52D7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B2D402C766295009B52D7 /* TipModel.swift */,
+				2B9B2D422C767563009B52D7 /* TipCalculatorBrain.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2B9B2D3C2C765EA7009B52D7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADB689562326708D006D4E2B /* ViewController.swift */,
+				2B9B2D3E2C765EF8009B52D7 /* ResultViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		2B9B2D3D2C765EBD009B52D7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ADB689582326708D006D4E2B /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		ADB689462326708D006D4E2B = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +88,11 @@
 		ADB689512326708D006D4E2B /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				2B9B2D3D2C765EBD009B52D7 /* view */,
+				2B9B2D3C2C765EA7009B52D7 /* controller */,
+				2B9B2D3B2C765E73009B52D7 /* model */,
 				ADB689522326708D006D4E2B /* AppDelegate.swift */,
 				ADB689542326708D006D4E2B /* SceneDelegate.swift */,
-				ADB689562326708D006D4E2B /* ViewController.swift */,
-				ADB689582326708D006D4E2B /* Main.storyboard */,
 				ADB6895B2326708E006D4E2B /* Assets.xcassets */,
 				ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */,
 				ADB689602326708E006D4E2B /* Info.plist */,
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9B2D412C766295009B52D7 /* TipModel.swift in Sources */,
 				ADB689572326708D006D4E2B /* ViewController.swift in Sources */,
 				ADB689532326708D006D4E2B /* AppDelegate.swift in Sources */,
 				ADB689552326708D006D4E2B /* SceneDelegate.swift in Sources */,
+				2B9B2D432C767563009B52D7 /* TipCalculatorBrain.swift in Sources */,
+				2B9B2D3F2C765EF8009B52D7 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
